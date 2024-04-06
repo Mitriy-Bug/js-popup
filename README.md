@@ -5,7 +5,7 @@
 ### Инструкция
 
 - Подключаем файлы popup.js и popup.css
-- размещаем блок всплывающего окна, лучше в конце страницы. Скрывать дополнительно не надо, для его класса прописаны стили в файле popup.css. В примере используется код формы обратной связи, созданной на плагине [Radical Form]([http://example.com/](https://github.com/Delo-Design/radicalform)) для Joomla
+- размещаем блок всплывающего окна, лучше в конце страницы. Скрывать дополнительно не надо, для его класса прописаны стили в файле popup.css. В примере используется код формы обратной связи, созданной на плагине [Radical Form](https://github.com/Delo-Design/radicalform) для Joomla
 ```
 <div class="popup__bg forma-zakaz">
     <div class="popup text-center">
