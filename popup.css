@@ -41,3 +41,6 @@
 .close-popup svg{
   fill: #09732c;
 }
+.btn{
+    cursor: pointer;
+}
