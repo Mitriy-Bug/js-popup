@@ -13,7 +13,7 @@
             <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path></svg>
         </div>
         <div class="popup-main">
-            <h2>Заказать продукцию</h2>
+            <h2>Оставить заявку</h2>
             <p>Отправьте заявку и наш специалист свяжется с вами!</p>
             <form class="form-horizontal needs-validation row">
               <div class="col-12 position-relative mb-3">
@@ -24,9 +24,6 @@
               </div>
               <div class="col-12 position-relative mb-3">
                 <input type="email" class="form-control" name="mail" placeholder="E-mail">
-              </div>
-              <div class="col-12 position-relative mb-3">
-                <input type="text" class="form-control" name="count" placeholder="Сколько нужно кирпичей">
               </div>
               <div class="col-12 position-relative mb-3">
                 <textarea class="form-control" name="message" placeholder="Комментарий к заявке" ></textarea>
@@ -44,3 +41,11 @@
 ```html
     <p style="text-align: center;"><button class="btn btn-success open-popup" data-popup="forma-zakaz">Оставить заявку</button></p>
 ```
+
+> ### Особенности размещения нескольких блоков
+> - Для каждой кнопки обязательным является класс `.open-popup`. А на какой именно блок идет вызов с кнопки пишем в data параметре popup - `data-popup="forma-zakaz"`
+> - В самом блоке всплывающего окна, в родительском блоке должен присутствовать класс из параметра data-popup, в нашем случае это `forma-zakaz`
+    Пример
+    ```html
+    <div class="popup__bg forma-zakaz">
+    ```
