@@ -6,7 +6,7 @@
 
 - Подключаем файлы popup.js и popup.css
 - размещаем блок всплывающего окна, лучше в конце страницы. Скрывать дополнительно не надо, для его класса прописаны стили в файле popup.css. В примере используется код формы обратной связи, созданной на плагине [Radical Form](https://github.com/Delo-Design/radicalform) для Joomla
-```
+```html
 <div class="popup__bg forma-zakaz">
     <div class="popup text-center">
         <div class="close-popup">
@@ -39,4 +39,8 @@
         </div>
     </div>
 </div>
+```
+- Размещаем кнопку вызова всплывающего окна. <strong>ВАЖНО!!!</strong> На какой странице находится кнопка, там же и должен быть размещён код всплывающего окна
+```html
+    <p style="text-align: center;"><button class="btn btn-success open-popup" data-popup="forma-zakaz">Оставить заявку</button></p>
 ```
